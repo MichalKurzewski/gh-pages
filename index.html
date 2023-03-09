@@ -4,8 +4,26 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/name-of-my-repository/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript">
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);
+    </script>
     <title>Vite + React + TS</title>
-    <script type="module" crossorigin src="/name-of-my-repository/assets/index-9a3d0361.js"></script>
+    <script type="module" crossorigin src="/name-of-my-repository/assets/index-897f0f81.js"></script>
     <link rel="stylesheet" href="/name-of-my-repository/assets/index-d526a0c5.css">
   </head>
   <body>
