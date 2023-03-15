@@ -1,3 +1,3 @@
 # gh-pages
-Repository for:
+Repository for my mediumarticle:
 https://medium.com/@michal.kurzewski/react-with-router-vite-github-pages-setup-3cd952bdf29
